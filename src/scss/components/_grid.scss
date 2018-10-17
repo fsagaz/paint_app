@@ -1,0 +1,52 @@
+/* Grid
+=============== */
+
+$column-padding: 1rem;
+$margin-bottom: 1rem;
+
+// The rows have a negative margin  which are offset by the padding on the columns.
+%column-padding {
+    padding-left: $column-padding;
+    padding-right: $column-padding;
+}
+
+%row-margin {
+    margin-left: -$column-padding;
+    margin-right: -$column-padding;
+}
+
+
+
+.flex-grid {
+  display:flex;
+flex-direction:row;
+}
+
+
+.flex-grid > .flex-item{
+  flex-grow:0;
+  width:45%;
+}
+
+
+
+
+/* Small screen breakpoint */
+
+@include small-breakpoint {
+  .flex-small,
+  .flex-large {
+      flex: initial;
+      width: 100%;
+  }
+}
+
+/* Large screen breakpoint */
+
+@include large-breakpoint {
+    .flex-large {
+        flex: 1 1 0;
+        margin-bottom: 0;
+    }
+
+}

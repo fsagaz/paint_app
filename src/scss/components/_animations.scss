@@ -1,0 +1,15 @@
+@include keyframes(fadein) {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+
+}
+
+@include keyframes(width) {
+  0% { width: 0; }
+  100% { width: 100%; }
+
+}
+
+@include keyframes(bounce) {
+  30% {-webkit-transform: translateY(-45px);}
+}
