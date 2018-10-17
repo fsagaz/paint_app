@@ -3,11 +3,14 @@
 ### Setup and Run
 
 Installing dependencies (Babel, browserify, gulp etc..) desde la carpeta application:
-```npm install
+
+```
+npm install
 ```
 
 Run the app:
-```gulp default
+```
+gulp default
 ```
 App runs on 8080 port by default.
 
